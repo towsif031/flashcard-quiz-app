@@ -34,7 +34,11 @@ function App() {
 		return textArea.value;
 	}
 
-	return <FlashcardList flashcards={flashcards} />;
+	return (
+		<div className="container">
+			<FlashcardList flashcards={flashcards} />
+		</div>
+	);
 }
 
 const SAMPLE_FLASHCARDS = [
