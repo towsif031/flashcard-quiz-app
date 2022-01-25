@@ -19,6 +19,11 @@ const Flashcard = ({ flashcard }) => {
 		flashcard.options
 	]);
 
+	useEffect(() => {
+		window.addEventListener('resize', setMaxHeight);
+		return () => window.removeEventListener('resize', setMaxHeight);
+	}, []);
+
 	return (
 		<div
 			className={`card ${flip ? 'flip' : ''}`}
