@@ -34,7 +34,11 @@ const Flashcard = ({ flashcard }) => {
 				{flashcard.question}
 				<div className="flashcard-options">
 					{flashcard.options.map((option) => {
-						return <div className="flashcard-option">{option}</div>;
+						return (
+							<div className="flashcard-option" key={option}>
+								{option}
+							</div>
+						);
 					})}
 				</div>
 			</div>
