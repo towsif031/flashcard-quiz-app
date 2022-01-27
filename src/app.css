@@ -44,6 +44,10 @@ body {
 	cursor: pointer;
 }
 
+.btn:hover {
+	background-color: hsl(200, 100%, 40%);
+}
+
 .card {
 	display: flex;
 	justify-content: center;
