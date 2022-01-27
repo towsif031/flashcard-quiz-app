@@ -74,6 +74,9 @@ function App() {
 						ref={amountEl}
 					/>
 				</div>
+				<div className="form-group">
+					<button className="btn">Generate</button>
+				</div>
 			</form>
 			<div className="container">
 				<FlashcardList flashcards={flashcards} />

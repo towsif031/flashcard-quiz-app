@@ -13,6 +13,37 @@ body {
 	max-width: 900px;
 }
 
+.header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 1.5rem;
+	background-color: #fff;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem;
+}
+
+.form-group > label {
+	margin: 0.25rem;
+	color: #777;
+	font-size: 0.75rem;
+}
+
+.btn {
+	padding: 0.5em 1em;
+	background-color: hsl(200, 100%, 50%);
+	color: #fff;
+	border: none;
+	border-radius: 0.3em;
+	cursor: pointer;
+}
+
 .card {
 	display: flex;
 	justify-content: center;
